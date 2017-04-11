@@ -1,11 +1,12 @@
 ﻿using System;
+using System.IO;
 using DataLayer;
 using DataLayer.DataModel;
 using DataLayer.MemoryCopy;
-using DataLayer.Utilities;
 using DataLayer.Warmup;
 using FluentAssertions;
 using NUnit.Framework;
+using File = DataLayer.Utilities.File;
 
 namespace DataLayerTests
 {
@@ -17,7 +18,7 @@ namespace DataLayerTests
         [SetUp]
         public void SetUp()
         {
-            filePath = Guid.NewGuid().ToString();
+            filePath = Path.Combine(TestContext.CurrentContext.TestDirectory,Guid.NewGuid().ToString());
         }
 
         [TearDown]

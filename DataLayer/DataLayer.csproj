@@ -47,6 +47,7 @@
     <Compile Include="OperationLog\IOpLogWriter.cs" />
     <Compile Include="OperationLog\Operations\IOperationSerializer.cs" />
     <Compile Include="OperationLog\Operations\IOperation.cs" />
+    <Compile Include="OperationLog\Operations\Operation.cs" />
     <Compile Include="OperationLog\Operations\OperationSerializer.cs" />
     <Compile Include="DataModel\Item.cs" />
     <Compile Include="OperationLog\OpLogManager.cs" />

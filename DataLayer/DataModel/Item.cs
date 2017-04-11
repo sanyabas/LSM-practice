@@ -25,6 +25,11 @@
 
         public bool IsTombStone { get; }
 
+        public string GetStringRepresentation()
+        {
+            return $"{{{Key} : {Value} (deleted={IsTombStone})}}";
+        }
+
         #region EqualityMembers
         private bool Equals(Item other)
         {
